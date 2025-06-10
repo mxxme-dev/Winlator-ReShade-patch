@@ -1,4 +1,18 @@
-# Winlator-ReShade-patch
+# V2-Winlator-ReShade-patch
+
+Download exe and run the installer,
+choose the folder where the game is situated and input the api.
+
+
+
+
+
+
+
+
+
+
+# V1-Winlator-ReShade-patch
 
 * **cfg_game.txt** should be edited in notepad only!
 
@@ -12,4 +26,5 @@
   BALDI.exe;64
   ```
 created by jhinzuo and automation added by mxxme.
+
 
