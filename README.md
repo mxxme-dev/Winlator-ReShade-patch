@@ -1,4 +1,4 @@
-# V2-Winlator-ReShade-patch
+# [V2-Winlator-ReShade-patch](https://github.com/mxxme-dev/Winlator-ReShade-patch/releases/tag/v2.0.0)
 
 Download exe and run the installer,
 choose the folder where the game is situated and input the api.
