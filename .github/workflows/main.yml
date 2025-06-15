@@ -2,7 +2,7 @@ name: Deploy static content to Pages
 
 on:
   push:
-    branches: ["web"]  # Trigger deployment from the 'web' branch
+    branches: ["main"]
   workflow_dispatch:
 
 permissions:
@@ -21,16 +21,16 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout main branch
         uses: actions/checkout@v4
 
-      - name: Setup Pages
+      - name: Setup GitHub Pages
         uses: actions/configure-pages@v5
 
-      - name: Upload artifact
+      - name: Upload static site
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './_site'  # Only deploy the _site folder
+          path: .github/workflows/_site  # << this is your real folder
 
       - name: Deploy to GitHub Pages
         id: deployment
